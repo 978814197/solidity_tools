@@ -151,37 +151,6 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					}
-				],
-				"name": "withdrawEth",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "token_address",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					}
-				],
-				"name": "withdrawToken",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -212,11 +181,11 @@
 	},
 	"sources": {
 		"TransferInBulk.sol": {
-			"keccak256": "0x716991b5b15d04944bd624bebb91f9fd2f668e4b1645e7634d82a8f241b5dcfe",
+			"keccak256": "0xc84c29ab73d2c32e25ab80a6f274979962a0b21ff205b7555a05512aa54c4e48",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e74a94e6ec8495bc92ac85372a1b912c5a659f4366aa9ec95edb4542c0ce20f0",
-				"dweb:/ipfs/QmcC5XbEebjKQN8WXy67nLCUfDsvpNdD3moVdCnU25H9aq"
+				"bzz-raw://2507c4bdddc50213244190766525b1049d93efded09fc2825c01296fbd4a28c4",
+				"dweb:/ipfs/QmZFdAC28Cqrww6JTWTpGADMQ4r9kvUGYiqP6yQzrZWhhu"
 			]
 		}
 	},
