@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.17;
 
 interface IERC20 {
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -513,7 +513,10 @@ contract BulkTransfer is Ownable {
         payable
     {
         uint256 length = to.length;
-        require(msg.value >= length.mul(amount), "BulkTransfer: The fee is not enough to transfer");
+        require(
+            msg.value >= length.mul(amount),
+            "BulkTransfer: The fee is not enough to transfer"
+        );
         for (uint256 i = 0; i < length; i++) {
             to[i].transfer(amount);
         }
@@ -556,6 +559,23 @@ contract BulkTransfer is Ownable {
         uint256 length = to.length;
         for (uint256 i = 0; i < length; i++) {
             token.safeTransfer(to[i], amount[i]);
+        }
+    }
+
+    // 取回代币
+    function withdrawToken(address token_address, address to) public onlyOwner {
+        IERC20 token = IERC20(token_address);
+        uint256 balance = token.balanceOf(address(this));
+        if (balance > 0) {
+            token.transfer(to, balance);
+        }
+    }
+
+    // 取回eth
+    function withdrawEth(address to) public onlyOwner {
+        uint256 balance = address(this).balance;
+        if (balance > 0) {
+            payable(to).transfer(balance);
         }
     }
 }

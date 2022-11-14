@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TransferInBulk.sol": "SafeERC20"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TransferInBulk.sol": {
+			"keccak256": "0x716991b5b15d04944bd624bebb91f9fd2f668e4b1645e7634d82a8f241b5dcfe",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e74a94e6ec8495bc92ac85372a1b912c5a659f4366aa9ec95edb4542c0ce20f0",
+				"dweb:/ipfs/QmcC5XbEebjKQN8WXy67nLCUfDsvpNdD3moVdCnU25H9aq"
+			]
+		}
+	},
+	"version": 1
+}
